@@ -9,4 +9,5 @@ data <- read.csv("Air_Traffic_Passenger_Statistics.csv")
 # Keep only required columns
 df <- data[, c("Passenger.Count", "GEO.Summary")]
 df <- na.omit(df)
+
 library(ggplot2)

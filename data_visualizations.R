@@ -22,7 +22,7 @@ ggplot(df, aes(x = Passenger.Count, fill = GEO.Summary)) +
   geom_histogram(aes(y = ..density..), bins = 40, alpha = 0.45, position = "identity", color = "black") +
   geom_density(alpha = 0.7, linewidth = 0.9) +
   scale_x_log10() +
-  lab(
+  labs(
     title = "Histogram with Density Overlay of Passenger Counts for Domestic and International Flights",
     subtitle = "Log scale used to clearly display skewed flight passenger volume distribution",
     x = "Passenger Count (Log Scale)",

@@ -74,3 +74,7 @@ summarise(
 n = n(),
   median_passengers = median(Passenger.Count),
   IQR_passengers = IQR(Passenger.Count)
+    )
+
+print(summary_stats)
+

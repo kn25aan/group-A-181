@@ -70,4 +70,6 @@ df <- na.omit(df)
 # Summary statistics for each group
 summary_stats <- df %>%
 group_by(GEO.Summary) %>%
-  summarise(
+summarise(
+n = n(),
+    median_passengers = median(Passenger.Count),

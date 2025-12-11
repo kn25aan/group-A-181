@@ -67,3 +67,5 @@ df <- na.omit(df)
 # Keep only required columns
 df <- df[, c("Passenger.Count", "GEO.Summary")]
 df <- na.omit(df)
+# Summary statistics for each group
+summary_stats <- df %>%

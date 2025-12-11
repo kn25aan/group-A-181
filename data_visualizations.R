@@ -56,7 +56,7 @@ international <- df$Passenger.Count[df$GEO.Summary == "International"]
 wilcox.test(Passenger.Count ~ GEO.Summary, data = df)
 
 # Load packages
-library(dply)
+library(dplyr)
 
 # Read dataset
 df <- read.csv("Air_Traffic_Passenger_Statistics.csv")

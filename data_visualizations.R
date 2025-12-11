@@ -44,7 +44,7 @@ ggplot(df, aes(x = GEO.Summary, y = Passenger.Count, fill = GEO.Summary)) +
   labs(
     title = "Comparison of Passenger Count Between Domestic and International Flights",
     x = "Flight Category",
-    y = "Passenger Count (Number of Passengers)"
+    z = "Passenger Count (Number of Passengers)"
   ) +
   theme_minimal() +
   scale_fill_manual(values = c("steelblue", "darkred"), name = "Flight Category")
